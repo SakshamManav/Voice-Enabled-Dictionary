@@ -1,86 +1,85 @@
 * {
-    margin: 0;
-  }
-  body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #ae9cff;
-  }
-  .container {
-    background-color: white;
-  
-    min-height: 250px;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    border: 2px solid black;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px black;
-  }
-  .header {
-    display: flex;
-    min-height: 40px;
-    max-width: 480px;
-    margin: 5px 10px;
-  }
-  #input {
-    font-size: 20px;
-    margin-right: 20px;
-    border: none;
-    width: 100%;
-    background-color: #fff;
-    border-bottom: 2px solid black;
-  }
-  #input:focus {
-    outline: none;
-  }
-  
-  .btn {
-    background-color: #ae9cff;
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 4px;
-  }
-  .result {
-    min-height: 180px;
-    margin: 5px 10px;
-  }
-  .word {
-    font-size: 20px;
-    margin-top: 6px;
-    font-weight: bold;
-  }
-  .synonyms {
-    font-size: 18px;
-    margin-top: 4px;
-    max-width: 400px;
-    /* max-width: max-content; */
-  }
-  .antonyms {
-    font-size: 18px;
-    margin-top: 4px;
-  }
-  
-  .real-audio {
-    display: none;
-  }
-  .audio-icon {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background-color: lightgrey;
-    display: none;
-    justify-content: center;
-    align-items: center;
-  }
-  .msg {
-    font-size: 18px;
-    font-weight:900;
-    display: none;
-    color: red;
-  }
-  
+  margin: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ae9cff;
+}
+.container {
+  background-color: white;
+
+  min-height: 250px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
+}
+.header {
+  display: flex;
+  min-height: 40px;
+  max-width: 480px;
+  margin: 5px 10px;
+}
+#input {
+  font-size: 20px;
+  margin-right: 20px;
+  border: none;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 2px solid black;
+}
+#input:focus {
+  outline: none;
+}
+
+.btn {
+  background-color: #ae9cff;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 4px;
+}
+.result {
+  min-height: 180px;
+  margin: 5px 10px;
+}
+.word {
+  font-size: 20px;
+  margin-top: 6px;
+  font-weight: bold;
+}
+.synonyms {
+  font-size: 18px;
+  margin-top: 4px;
+  max-width: 400px;
+  /* max-width: max-content; */
+}
+.antonyms {
+  font-size: 18px;
+  margin-top: 4px;
+}
+
+.real-audio {
+  display: none;
+}
+.audio-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: lightgrey;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.msg {
+  font-size: 18px;
+  font-weight:900;
+  display: none;
+  color: red;
+}
