@@ -17,6 +17,7 @@ async function dictionary(word) {
   data = await response.json();
 
   console.log(data);
+  console.log(data[0].meanings[0].synonyms.slice(0,5));
   if (response.ok) {
     word1.innerHTML = `Meaning = ${data[0].meanings[0].definitions[0].definition}`;
     word1.style.color = "black";
@@ -70,7 +71,7 @@ function checkSynonyms() {
 
   for (let object of data[0].meanings) {
     if (object.synonyms.length > 0) {
-      synonyms.innerHTML = `Synonyms =  ${object.synonyms}`;
+      synonyms.innerHTML = `Synonyms =  ${object.synonyms.slice(0,5)}`;
       found = true;
       break;
     }
@@ -85,7 +86,7 @@ function checkAntonyms() {
 
   for (let object of data[0].meanings) {
     if (object.antonyms.length > 0) {
-      antonyms.innerHTML = `Antonyms = ${object.antonyms}`;
+      antonyms.innerHTML = `Antonyms = ${object.antonyms.slice(0,5)}`;
       found = true;
       break;
     }
